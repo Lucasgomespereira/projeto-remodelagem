@@ -1,0 +1,25 @@
+#imgLogo{
+    width:80px;
+}
+.menuRodape{
+    background-color:#800080;
+    color:#fff;
+}
+.corVerde{
+    text-color: yellowgreen;
+}
+nav, li > a{
+    font-weight: bold;
+    font-size: 18px;
+}
+li > a:hover{
+    background-color: darkmagenta;
+    font-size: 120%;
+    border-radius: 10%;
+}
+#imgRodape{
+    width: 200px;
+}
+ul.fonte {
+    list-style-type: none;
+}
