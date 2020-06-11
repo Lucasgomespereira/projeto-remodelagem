@@ -5,9 +5,6 @@
     background-color:#800080;
     color:#fff;
 }
-.corVerde{
-    color: yellowgreen;
-}
 nav, li > a{
     font-weight: bold;
     font-size: 18px;
@@ -38,4 +35,11 @@ ul.fonte {
 .textoMedio{
     width: 55%;
     margin-left: 20%;
+}
+.imgAtendimento{
+    width: 120px;
+    height: 100px;
+}
+#btnContato{
+    margin-left:32%;
 }

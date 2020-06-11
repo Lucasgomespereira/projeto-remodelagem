@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,21 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <div class="corprincipal">
+        <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
+            <div class="">
+                <p class="text-white">Acessibilidade</p>
+            </div>
+            <div class="">
+                <a href="#" class="text-decoration-none text-white">[1] Alto contraste</a>
+            </div>
+            <div class="">
+                <a href="#" class="text-decoration-none text-white">[2] Mapa do site</a>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark corprincipal">
         <div class="container-fluid">
             <img src="img/coracao.png" alt="Icone de coração" id="imgLogo" class="img-fluid">
@@ -15,7 +30,7 @@
             <button href="#" class="navbar-toggler" data-toggle="collapse" data-target="#itemMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="itemMenu">
                 <ul class="navbar-nav mr-auto navbar-dark">
                     <li><a href="index.html" class="nav-link active">Planos</a></li>
@@ -30,35 +45,85 @@
         <!--Fim do container-->
     </nav>
     <main>
-        
+        <div class="container mt-5">
+            <div class="container text-center">
+                <h2 class="corprincipal py-2 frases">Atendimento</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="text-decoration-none">
+                            <p class="font-weight-bold text-dark">Atendimento</p>
+                            <img src="img/telemarketing.png" class="img=fluid imgAtendimento"
+                                alt="Atendente de telemarketing">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="text-decoration-none">
+                            <p class="font-weight-bold text-dark ">WhatsApp</p>
+                            <img src="img/WhatsApp-icone.png" class="img=fluid imgAtendimento" alt="Icone do WhatsApp">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="text-decoration-none">
+                            <p class="font-weight-bold text-dark">Email</p>
+                            <img src="img/Email-icon.png" class="img=fluid imgAtendimento" alt="Icone de email">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container  mt-5">
+                <h2 class="corprincipal text-center frases py-2">Formulário de contato</h2>
+                <p class="text-danger font-weight-bold">(*) Campos obrigatórios</p>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="nome" class="font-weight-bold">Nome completo: <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control" name="nome">
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="font-weight-bold">Email: <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="col-12">
+                        <label for="sugestoes" class="font-weight-bold">Sugestões: <span
+                                class="text-danger">*</span></label>
+                        <textarea name="sugestoes" id="" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <div class="col-5 mt-2 text-center" id="btnContato">
+                        <button type="submit" class="form-control btn btn-success btn-lg">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="corprincipal mt-5">
         <div class="row container-fluid">
-            <div class="col-4 text-center">
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center">
                 <img src="img/medica.png" alt="Médica segurando raio-x" class="img-fluid" id="imgRodape">
             </div>
-            <div class="col-4 mt-4">
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center mt-4">
                 <h4 class="text-white">Endereço</h4>
                 <span class="text-white">Av. Celso Garcia, 3724, cj 12<br></span>
                 <span class="text-white">Tatuape - São Paulo - SP, 03064-000</sp>
-                </div>
-                <div class="col-4 mt-4">
-                    <h4 class="text-white">Menu</h4>
-                    <ul class="list-group fonte">
-                        <li><a href="index.html" class="text-white text-decoration-none">Planos</a></li>
-                        <li><a href="tabela.html" class="text-white text-decoration-none">Tabela</a></li>
-                        <li><a href="simulador.html" class="text-white text-decoration-none">Simulador</a></li>
-                        <li><a href="informacoes.html" class="text-white text-decoration-none">Informações</a></li>
-                        <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
-                    </ul>
-                </div>
             </div>
-            <div class="text-center">
-                <span class="text-white">Copyright 2006 - www.planosdesaudetodosaqui.com.br | Desenvolvido por:</span>
-                <span class="text-success">Web Interface Team</span>
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center mt-4">
+                <h4 class="text-white">Menu</h4>
+                <ul class="list-group fonte">
+                    <li><a href="index.html" class="text-white text-decoration-none">Planos</a></li>
+                    <li><a href="tabela.html" class="text-white text-decoration-none">Tabela</a></li>
+                    <li><a href="simulador.html" class="text-white text-decoration-none">Simulador</a></li>
+                    <li><a href="informacoes.html" class="text-white text-decoration-none">Informações</a></li>
+                    <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+                </ul>
             </div>
-        </footer>
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
-    </html>
+        </div>
+        <div class="text-center">
+            <span class="text-white font-weight-bold">Copyright 2006 - www.planosdesaudetodosaqui.com.br | Desenvolvido
+                por:</span>
+            <span class="text-success font-weight-bold">Web Interface Team</span>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
