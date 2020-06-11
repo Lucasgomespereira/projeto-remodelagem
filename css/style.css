@@ -43,13 +43,9 @@ ul.fonte {
 #btnContato{
     margin-left:32%;
 }
-@media(min-width:768px){
-    .espacoInfo{
-        margin-left: 10%;
-    }
-}
+
 #imgSimulador{
-    height: 550px;
+    height: 100%;
 }
 #imgPatrocinador{
     width: 150px;
@@ -57,4 +53,16 @@ ul.fonte {
 }
 .inputSimulador{
     width: 12%;
+}
+
+@media(min-width:768px){
+    .espacoInfo{
+        margin-left: 10%;
+    }
+}
+@media(max-width:768px){
+    #imgSimulador{
+        height: 95%;
+        margin-top: 2.2%;
+    }
 }
