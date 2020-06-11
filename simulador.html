@@ -45,33 +45,42 @@
         <!--Fim do container-->
     </nav>
     <main>
-        <div class="rou">
-            <h2 class="display-5 font-weight-bold text-center">Simulador de Planos de Saúde</h2>
-            <div class="cou-md-6">
-
-                <img src="img/simulador.PNG" alt="Primeira Imagem Simulador" class="Simulador01">
-
+        <h2 class="display-5 font-weight-bold text-center">Simulador de Planos de Saúde</h2>
+        <div class="row container">
+            <div class="col-sm-12 col-md-6">
+                <img src="img/simulador.png" alt="Mulheres abraçadas" class="img-fluid" id="imgSimulador">
 
             </div>
-            <div class="cou-md-3 bg-dark">
-                <p>Número de Pessoa(s)</p>
+            <div class="col-sm-12 col-md-3" id="idades">
+                <h1 class="h6">Número de pessoa(s):</h1>
+                <form action="#" class="form-inline">
+                    <div class="form-group mt-1">
+                        <label for="nome">00 a 18 anos:</label>
+                        <input type="text" name="nome" class="inputSimulador">
+                    </div>
+                </form>
 
+                <!--Aqui continua os formulários das idades-->
             </div>
-            <div class="cou-md-3">
+            <div class="col-md-3 text-center">
+                <label for="nome">Seu nome</label>
+                <input type="text" class="form-control bg-secondary text-light">
+                <label for="nome">Escolha o plano</label>
+                <p class="text-muted mt-3">Pessoa física</p>
+                <button class="btn btn-secondary form-control">INDIVIDUAL</button>
+                <button class="btn btn-secondary form-control mt-2">FAMILIAR</button>
 
+                <p class="text-muted mt-2">ou para empresa</p>
+                <button class="btn btn-secondary form-control">INDIVIDUAL</button>
+
+                <p class="font-weight-bold text-justify mt-3">Nossa ferramenta faz um orçamento comparativo de todos os planos de saúde e
+                    apresenta uma tabela completa com informações de preço, rede credenciada e prazos de carências. Não
+                    precisa informar os seus dados pessoais e o resultado saí na hora.</p>
             </div>
         </div>
     </main>
 
-
-
-
-
-
-
-
-    
-    <footer class="corprincipal mt-5">
+    <footer class="corprincipal">
         <div class="row container-fluid">
             <div class="col-sm-12 col-md-4 col-lg-4 text-center">
                 <img src="img/medica.png" alt="Médica segurando raio-x" class="img-fluid" id="imgRodape">

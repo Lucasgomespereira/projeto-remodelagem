@@ -48,7 +48,13 @@ ul.fonte {
         margin-left: 10%;
     }
 }
-.Simulador01{
-    width: 500px;
-    height: 400px;
+#imgSimulador{
+    height: 550px;
+}
+#imgPatrocinador{
+    width: 150px;
+    height: 120px;
+}
+.inputSimulador{
+    width: 12%;
 }
