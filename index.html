@@ -10,25 +10,19 @@
 </head>
 
 <body>
-    <!-- <div class="corprincipal container-fluid">
-        <div class="row corAcessibilidade" id="acessibilidade">
+    <div class="corprincipal">
+        <div class="d-flex justify-content-center corprincipal" id="flexAcessibilidade">
             <div class="">
-                <a href="#" class="text-dark">Itens de acessibilidade</a>
+                <p class="text-white">Acessibilidade</p>
             </div>
             <div class="">
-                <a href="#" class="text-dark">[1] Item 1</a>
+                <a href="#" class="text-decoration-none text-white">[1] Alto contraste</a>
             </div>
             <div class="">
-                <a href="#" class="text-dark">[2] Item 2</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-dark">[3] Item 3</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-dark">[4] Item 4</a>
+                <a href="#" class="text-decoration-none text-white">[2] Mapa do site</a>
             </div>
         </div>
-    </div> -->
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark corprincipal">
         <div class="container-fluid">
             <img src="img/coracao.png" alt="Icone de coração" id="imgLogo" class="img-fluid">
@@ -36,7 +30,7 @@
             <button href="#" class="navbar-toggler" data-toggle="collapse" data-target="#itemMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="itemMenu">
                 <ul class="navbar-nav mr-auto navbar-dark">
                     <li><a href="index.html" class="nav-link active">Planos</a></li>
@@ -52,20 +46,45 @@
     </nav>
 
     <main>
-        <div class="slide">
-            <h1 class="text-center">Imagens</h1>
+        <div id="slideInicial" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slideInicial" data-slide-to="0" class="active"></li>
+                <li data-target="#slideInicial" data-slide-to="1"></li>
+                <li data-target="#slideInicial" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/venda.jpg" alt="Venda de planos" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Conhece os nossos planos?</h3>
+                        <p>Garanta já o seu plano de saúde!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/orcamento.jpg" alt="Orçamento de planos" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Já fez seu orçamento?</h3>
+                        <p>Nossos atendentes estão a sua espera!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/contato.jpg" alt="Entre em contato" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Está esperando o que para cuidar da sua saúde?</h3>
+                        <p>Venha já garantir o seu plano!</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#slideInicial" class="carousel-control-prev" role="button" data-slide="prev" >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a href="#slideInicial" class="carousel-control-next" role="button" data-slide="next" >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <!-- <div class="carousel-inner">
-            <div class="carousel-item">
-                <img src="img/venda.jpg" alt="Primeiro slide" class="d-block w-100">
-            </div>
-            <div class="carousel-item-active">
-                <img src="img/orcamento.jpg" alt="Segundo slide" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="img/contato.jpg" alt="Terceiro slide" class="d-block w-100">
-            </div>
-        </div> -->
 
         <div class="container-fluid p-4 text-center corprincipal">
             <h2>Tipos de Planos</h2>
@@ -73,9 +92,10 @@
 
         <div class="row container-fluid text-center mt-5">
             <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
-                <img src="img/234eb10a717bba3610a4a89964359e08.png" alt="Plano pessoa física" class="img-fluid border rounded-circle imgPlanos">
+                <img src="img/234eb10a717bba3610a4a89964359e08.png" alt="Plano pessoa física"
+                    class="img-fluid border rounded-circle imgPlanos">
                 <h5>Plano pessoa física</h5>
-                <p class="text-justify">
+                <p class="text-justify textoMedio">
                     O plano pessoa física tem o reajuste anual controlado
                     pela Ans e a contratação é feita diretamente com a operadora.
                 </p>
@@ -83,9 +103,10 @@
             </div>
 
             <div class="col-sm-12 col-md-4 col-lg-4">
-                <img src="img/9b42dde06d06dbe2fd5cc90faf4788e9.png" alt="Plano adesão" class="img-fluid border rounded-circle imgPlanos">
+                <img src="img/9b42dde06d06dbe2fd5cc90faf4788e9.png" alt="Plano adesão"
+                    class="img-fluid border rounded-circle imgPlanos">
                 <h5>Plano adesão</h5>
-                <p class="text-justify">
+                <p class="text-justify textoMedio">
                     O plano coletivo por adesão tem o reajuste anual conforme a sinistralidade do plano
                     e a contratação é feita através de administradoras como a Qualicorp, Corpore, AllCare
                     e o usuário titular precisa ser filiado a entidade de classe ou sindicato conforme sua
@@ -95,38 +116,42 @@
             </div>
 
             <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
-                <img src="img/a234492addd1169d6c2cf16816df9e4d.png" alt="Plano empresarial" class="img-fluid border rounded-circle imgPlanos">
+                <img src="img/a234492addd1169d6c2cf16816df9e4d.png" alt="Plano empresarial"
+                    class="img-fluid border rounded-circle imgPlanos">
                 <h5>Plano empresarial</h5>
-                <p class="text-justify">
+                <p class="text-justify textoMedio">
                     O plano empresarial tem reajuste anual conforme a sinistralidade da carteira e é
                     necessário cpnj ativo para contratação e em caso de empresário individual o cnpj
-                    precisa ter pelo menos 6 meses de aberto. 
+                    precisa ter pelo menos 6 meses de aberto.
                 </p>
                 <button class="btn corprincipal">Saiba mais</button>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 mt-5">
-                <img src="img/9d72ae6407c9923d116998c1200d293b.png" alt="Plano sênior" class="img-fluid border rounded-circle imgPlanos">
+                <img src="img/9d72ae6407c9923d116998c1200d293b.png" alt="Plano sênior"
+                    class="img-fluid border rounded-circle imgPlanos">
                 <h5>Plano sênior</h5>
-                <p class="text-justify">
+                <p class="text-justify textoMenor mt-3">
                     O plano pessoa física categoria sênior é voltado para o público da terceira
                     idade e costuma ter custos menores e rede credenciada voltada para o público
                     dessa faixa etária.
                 </p>
-                <button class="btn corprincipal">Saiba mais</button>
+                <button class="btn corprincipal mt-4">Saiba mais</button>
             </div>
-           
+
             <div class="col-sm-12 col-md-6 col-lg-6 mt-5">
-                <img src="img/unnamed.png" alt="Plano com co-participação" class="img-fluid border rounded-circle imgPlanos">
+                <img src="img/unnamed.png" alt="Plano com co-participação"
+                    class="img-fluid border rounded-circle imgPlanos">
                 <h5>Plano com co-participação</h5>
-                <p class="text-justify">
+                <p class="text-justify textoMenor">
                     A opção de plano com co-participação possui mensalidade menor mas o usuário
                     participa na despesa. Nesse tipo de plano é acrescentado na mensalidade uma
                     taxa por cada procedimento usado no plano (consultas, exames, internação ...)
                 </p>
                 <button class="btn corprincipal">Saiba mais</button>
             </div>
-           
-        </div> <!--Fim da Row/linha-->
+
+        </div>
+        <!--Fim da Row/linha-->
     </main>
     <footer class="corprincipal mt-5">
         <div class="row container-fluid">

@@ -6,7 +6,7 @@
     color:#fff;
 }
 .corVerde{
-    text-color: yellowgreen;
+    color: yellowgreen;
 }
 nav, li > a{
     font-weight: bold;
@@ -27,9 +27,15 @@ ul.fonte {
     width: 220px;
     height: 200px;
 }
-.slide{
-    background-color: darkgray;
-    height: 480px;
+#flexAcessibilidade > div{
+    margin: 0px 5px;
 }
-.espacoInfo{
+.textoMenor{
+    width: 40%;
+    margin-left: 30%;
+}
+
+.textoMedio{
+    width: 55%;
+    margin-left: 20%;
 }
