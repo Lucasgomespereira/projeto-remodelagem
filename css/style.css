@@ -43,3 +43,8 @@ ul.fonte {
 #btnContato{
     margin-left:32%;
 }
+@media(min-width:768px){
+    .espacoInfo{
+        margin-left: 10%;
+    }
+}
