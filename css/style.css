@@ -54,7 +54,7 @@ ul.fonte {
 .inputSimulador{
     width: 12%;
 }
-
+/*Reorganizar as duas últimas colunas da informacoes.html*/
 @media(min-width:768px){
     .espacoInfo{
         margin-left: 10%;
@@ -64,5 +64,17 @@ ul.fonte {
     #imgSimulador{
         height: 95%;
         margin-top: 2.2%;
+    }
+}
+/*Retirar o texto dos slides de dispositivos muito pequenos*/
+@media(max-width:500px){
+    .textoSlide{
+        display: none;
+    }
+}
+/*Inclusão para deixar o menu responsivo para o iPhone 5/SE*/
+@media(max-width:330px){
+    a[class="navbar-brand"]{
+        font-size: 14px;
     }
 }
