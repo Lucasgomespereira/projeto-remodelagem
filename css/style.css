@@ -54,6 +54,9 @@ ul.fonte {
 .inputSimulador{
     width: 12%;
 }
+.verMais{
+    display: none;
+}
 /*Reorganizar as duas últimas colunas da informacoes.html*/
 @media(min-width:768px){
     .espacoInfo{
