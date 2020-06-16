@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Planos</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,11 +16,11 @@
                 <a href="#" class="text-decoration-none text-white" id="altoContraste">[1] Alto contraste</a>
             </div>
             <div class="">
-                <a href="mapaDoSite.html" class="text-decoration-none text-white">[2] Mapa do site</a>
+                <a href="#" class="text-decoration-none text-white">[2] Mapa do site</a>
             </div>
             <div class="">
-                <a href="#" class="text-decoration-none text-white" id="fonteMais">[3] A+</a>
-                <a href="#" class="text-decoration-none text-white" id="fonteMenos">[4] A-</a>
+                <a href="#" class="text-decoration-none text-white">[3] A+</a>
+                <a href="#" class="text-decoration-none text-white">[4] A-</a>
             </div>
             <div class="">
                 <a href="#" class="text-decoration-none text-white" id="restaurar">[5] Restaurar</a>
@@ -48,55 +48,38 @@
         </div>
         <!--Fim do container-->
     </nav>
+
     <main>
-        <div class="container mt-5">
-            <div class="container text-center">
-                <h2 class="corprincipal py-2 frases">Atendimento</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href="#" class="text-decoration-none">
-                            <p class="font-weight-bold text-dark">Atendimento</p>
-                            <img src="img/telemarketing.png" class="img=fluid imgAtendimento"
-                                alt="Atendente de telemarketing">
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" class="text-decoration-none">
-                            <p class="font-weight-bold text-dark ">WhatsApp</p>
-                            <img src="img/WhatsApp-icone.png" class="img=fluid imgAtendimento" alt="Icone do WhatsApp">
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" class="text-decoration-none">
-                            <p class="font-weight-bold text-dark">Email</p>
-                            <img src="img/Email-icon.png" class="img=fluid imgAtendimento" alt="Icone de email">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="container  mt-5">
-                <h2 class="corprincipal text-center frases py-2">Formulário de contato</h2>
-                <p class="text-danger font-weight-bold">(*) Campos obrigatórios</p>
-                <div class="row">
-                    <div class="col-12">
-                        <label for="nome" class="font-weight-bold">Nome completo: <span
-                                class="text-danger">*</span></label>
-                        <input type="text" class="form-control" name="nome">
-                    </div>
-                    <div class="col-12">
-                        <label for="email" class="font-weight-bold">Email: <span class="text-danger">*</span></label>
-                        <input type="email" class="form-control" name="email">
-                    </div>
-                    <div class="col-12">
-                        <label for="sugestoes" class="font-weight-bold">Sugestões: <span
-                                class="text-danger">*</span></label>
-                        <textarea name="sugestoes" id="" cols="30" rows="10" class="form-control"></textarea>
-                    </div>
-                    <div class="col-5 mt-2 text-center" id="btnContato">
-                        <button type="submit" class="form-control btn btn-success btn-lg contrastePreto">Enviar</button>
-                    </div>
-                </div>
-            </div>
+        <div class="list-group container mt-5" id="mapaDoSite">
+            <button class="list-group-item corprincipal h3">
+                Mapa do Site
+            </button>
+            <a href="index.html" class="text-decoration-none">
+                <button class="list-group-item list-group-item-action">
+                    Planos
+                </button>
+            </a>
+            <a href="tabela.html" class="text-decoration-none">
+                <button class="list-group-item list-group-item-action">
+                    Tabela
+                </button>
+            </a>
+            <a href="simulador.html" class="text-decoration-none">
+                <button class="list-group-item list-group-item-action">
+                    Simulador
+                </button>
+            </a>
+            <a href="informacoes.html" class="text-decoration-none">
+                <button class="list-group-item list-group-item-action">
+                    Informações
+                </button>
+            </a>
+            <a href="contato.html" class="text-decoration-none">
+                <button class="list-group-item list-group-item-action">
+                    Contato
+                </button>
+            </a>
+            </ul>
         </div>
     </main>
     <footer class="corprincipal mt-5">

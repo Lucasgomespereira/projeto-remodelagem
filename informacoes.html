@@ -13,31 +13,35 @@
     <div class="corprincipal">
         <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
             <div class="">
-                <p class="text-white">Acessibilidade</p>
+                <a href="#" class="text-decoration-none text-white" id="altoContraste">[1] Alto contraste</a>
             </div>
             <div class="">
-                <a href="#" class="text-decoration-none text-white">[1] Alto contraste</a>
+                <a href="mapaDoSite.html" class="text-decoration-none text-white">[2] Mapa do site</a>
             </div>
             <div class="">
-                <a href="#" class="text-decoration-none text-white">[2] Mapa do site</a>
+                <a href="#" class="text-decoration-none text-white" id="fonteMais">[3] A+</a>
+                <a href="#" class="text-decoration-none text-white" id="fonteMenos">[4] A-</a>
+            </div>
+            <div class="">
+                <a href="#" class="text-decoration-none text-white" id="restaurar">[5] Restaurar</a>
             </div>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark corprincipal">
         <div class="container-fluid">
             <img src="img/coracao.png" alt="Icone de coração" id="imgLogo" class="img-fluid">
-            <a href="#" class="navbar-brand">Plano de Saúde <br>Todos aqui!</a>
+            <a href="index.html" class="navbar-brand">Plano de Saúde <br>Todos aqui!</a>
             <button href="#" class="navbar-toggler" data-toggle="collapse" data-target="#itemMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="itemMenu">
                 <ul class="navbar-nav mr-auto navbar-dark">
-                    <li><a href="index.html" class="nav-link active">Planos</a></li>
-                    <li><a href="tabela.html" class="nav-link active">Tabela</a></li>
-                    <li><a href="simulador.html" class="nav-link active">Simulador</a></li>
-                    <li><a href="informacoes.html" class="nav-link active">Informações</a></li>
-                    <li><a href="contato.html" class="nav-link active">Contato</a></li>
+                    <li><a href="index.html" class="nav-link active hoverMenu">Planos</a></li>
+                    <li><a href="tabela.html" class="nav-link active hoverMenu">Tabela</a></li>
+                    <li><a href="simulador.html" class="nav-link active hoverMenu">Simulador</a></li>
+                    <li><a href="informacoes.html" class="nav-link active hoverMenu">Informações</a></li>
+                    <li><a href="contato.html" class="nav-link active hoverMenu">Contato</a></li>
                 </ul>
             </div>
             <!--Fim do collapse-->
@@ -228,6 +232,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/informacoes.js"></script>
+    <script src="js/acessibilidade.js"></script>
 </body>
 
 </html>

@@ -9,11 +9,12 @@ nav, li > a{
     font-weight: bold;
     font-size: 18px;
 }
-li > a:hover{
+.hoverMenu:hover{
     background-color: darkmagenta;
     font-size: 120%;
     border-radius: 10%;
 }
+
 #imgRodape{
     width: 200px;
 }
