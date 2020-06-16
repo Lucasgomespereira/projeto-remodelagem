@@ -6,17 +6,19 @@ $(document).ready(function(){
         $('#nomeContraste').removeClass('bg-secondary');
         $('#nomeContraste').addClass('contrastePreto');
         $('.btn-outline-success').addClass("btn-outline-dark");
+        $('.btnContraste').addClass('btn-dark');
     });
     $("#fonteMais").click(function(){
     });
     $("#fonteMenos").click(function(){
     });
     $("#restaurar").click(function(){
-        $('.corprincipal').css("background-color","darkmagenta");
-        $('.hoverMenu').css("background-color","darkmagenta");
+        $('.corprincipal').css("background-color","#800080");
+        $('.hoverMenu').css("background-color","");
         $(".fonte").css("font-size","16px");
         $('#nomeContraste').addClass('bg-secondary');
-        $('.contrastePreto').addClass('bg-secondary');
+        $('.contrastePreto').css({"background-color":"","color":""});
         $('.btn-outline-success').removeClass("btn-outline-dark");
+        $('.btnContraste').removeClass('btn-dark');
     });
 });

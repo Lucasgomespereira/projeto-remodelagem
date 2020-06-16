@@ -37,6 +37,10 @@ ul.fonte {
     width: 55%;
     margin-left: 20%;
 }
+.textoSlide{
+    text-shadow: 2px 1px black;
+    font-weight: bold;
+}
 .imgAtendimento{
     width: 120px;
     height: 100px;
@@ -57,6 +61,9 @@ ul.fonte {
 }
 .verMais{
     display: none;
+}
+#tituloNav{
+    text-shadow: 2px 0px black;
 }
 /*Reorganizar as duas últimas colunas da informacoes.html*/
 @media(min-width:768px){
