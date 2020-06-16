@@ -30,7 +30,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark corprincipal">
         <div class="container-fluid">
             <img src="img/coracao.png" alt="Icone de coração" id="imgLogo" class="img-fluid">
-            <a href="index.html" class="navbar-brand border-bottom border-white text-center" id="tituloNav">Plano de Saúde <br>Todos aqui!</a>
+            <a href="index.html" class="navbar-brand border-bottom border-white text-center" id="tituloNav">Plano de
+                Saúde <br>Todos aqui!</a>
             <button href="#" class="navbar-toggler" data-toggle="collapse" data-target="#itemMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -56,18 +57,35 @@
                     É o tempo de espera que após contratar o plano de saúde tem que aguardar para ter direito as
                     coberturas. De uma forma genérica e resumida os prazos são:
                 </p>
-                <a href="#verMais1" id="linkVerMais1">Ver mais...</a>
-                <div id="verMais1" class="verMais">
-                    <p class=""><span class="font-weight-bold">24 horas:</span> Atendimento de urgência</p>
-                    <p><span class="font-weight-bold">30 dias:</span> Consultas e exames simples</p>
-                    <p><span class="font-weight-bold">6 meses:</span> Internação e cirurgia</p>
-                    <p><span class="font-weight-bold">10 meses:</span> Parto</p>
-                    <p><span class="font-weight-bold">24 meses:</span> Cirurgias ou tratamentos de alta complexidade
-                        para
-                        doenças ou lesões já pré existente</p>
-                    <p>Consulte em nossas tabelas os prazos de carência normal e a redução de carências para quem tem
-                        plano
-                        anterior</p>
+                <div class="accordion" id="InfoRecolherUm">
+                    <div class="card">
+                        <div class="card-header" id="cabecalhoUm">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#recolherUm"
+                                aria-expanded="false" aria-controls="recolherUm">Ver mais...</button>
+                        </div>
+                    </div>
+
+                    <div id="recolherUm" class="collapse" aria-labelledby="cabecalhoUm" data-parent="#InfoRecolherUm">
+                        <div class="card-body">
+                            <p class="text-justify"><span class="font-weight-bold">24 horas:</span> Atendimento de
+                                urgência</p>
+                            <p class="text-justify"><span class="font-weight-bold">30 dias:</span> Consultas e exames
+                                simples</p>
+                            <p class="text-justify"><span class="font-weight-bold">6 meses:</span> Internação e cirurgia
+                            </p>
+                            <p class="text-justify"><span class="font-weight-bold">10 meses:</span> Parto</p>
+                            <p class="text-justify"><span class="font-weight-bold">24 meses:</span> Cirurgias ou
+                                tratamentos de alta
+                                complexidade
+                                para
+                                doenças ou lesões já pré existente</p>
+                            <p class="text-justify">Consulte em nossas tabelas os prazos de carência normal e a redução
+                                de carências para
+                                quem tem
+                                plano
+                                anterior</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -77,19 +95,39 @@
                     O cliente de plano de saúde que declara ter alguma doença ou lesão pré-existente anterior a
                     assinatura do contrato, que precise de internação, cirurgia ou procedimentos de alta complexidade,
                     tem a carência aumentada.
-                    <a href="#verMais2" id="linkVerMais2">Ver mais...</a>
-                    <span id="verMais2" class="verMais">
-                        Veja o que diz a lei dos planos de saúde: Doenças ou Lesões Preexistentes (DLP) são aquelas que
-                        o
-                        beneficiário ou seu representante legal saiba ser portador ou sofredor, no momento da
-                        contratação ou
-                        adesão ao plano privado de assistência à saúde, de acordo com o art. 11 da Lei nº 9.656, de 3 de
-                        junho de 1998, o inciso IX do art 4º da Lei nº 9.961;
-                        Pode ser agendada uma entrevista médica para uma avaliação clinica justamente para identificação
-                        desses casos.
-                        Consultas, exames e procedimentos de baixa complexidade tem a carência normal de contrato
-                    </span>
-                </p>
+                <div class="accordion" id="InfoRecolherDois">
+                    <div class="card">
+                        <div class="card-header" id="cabecalhoDois">
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                data-target="#recolherDois" aria-expanded="false" aria-controls="recolherDois">
+                                Ver mais...
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="recolherDois" class="collapse" aria-labelledby="cabecalhoDois"
+                        data-parent="#InfoRecolherDois">
+                        <div class="card-body">
+                            <p class="text-justify">
+                                Veja o que diz a lei dos planos de saúde: Doenças ou Lesões Preexistentes (DLP) são
+                                aquelas
+                                que
+                                o
+                                beneficiário ou seu representante legal saiba ser portador ou sofredor, no momento da
+                                contratação ou
+                                adesão ao plano privado de assistência à saúde, de acordo com o art. 11 da Lei nº 9.656,
+                                de
+                                3 de
+                                junho de 1998, o inciso IX do art 4º da Lei nº 9.961;
+                                Pode ser agendada uma entrevista médica para uma avaliação clinica justamente para
+                                identificação
+                                desses casos.
+                                Consultas, exames e procedimentos de baixa complexidade tem a carência normal de
+                                contrato
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
@@ -119,28 +157,47 @@
                     Após cumprido o período de carência os prazos máximos de atendimento são:
                     Consulta básica - pediatria, clínica médica, cirurgia geral, ginecologia e obstetrícia: 7 dias
                     Consulta nas demais especialidades: 14 dias
-                    Consulta/ sessão - fonoaudiólogo, nutricionista, psicólogo, terapeuta ocupacional, fisioterapeuta:
+                    Consulta/ sessão - fonoaudiólogo, nutricionista, psicólogo, terapeuta ocupacional,
+                    fisioterapeuta:
                     10 dias
-                    <a href="#verMais3" id="linkVerMais3">Ver mais...</a>
-                    <span id="verMais3" class="verMais text-justify">Serviços de diagnóstico por laboratório de análises
-                        clínicas em
-                        regime
-                        ambulatorial: 3 dias
-                        Demais serviços de diagnóstico e terapia em regime ambulatorial: 10 dias
-                        Procedimentos de alta complexidade: 21 dias
-                        Atendimento em regimento hospital-dia: 10 dias
-                        Atendimento em regime de internação eletiva: 21 dias
-                        Urgência e emergência: imediato
-                        Consulta de retorno: a critério do profissional
-                        Após entrar em contato com o prestador, se não conseguir marcar o procedimento dentro do prazo
-                        máximo previsto, você deverá entrar em contato com operadora do seu plano de saúde para obter
-                        uma
-                        alternativa para o atendimento.
-                        Se a operadora do plano de saúde não garantir o atendimento no prazo estabelecido, você deverá
-                        fazer
-                        a denúncia à ANS para que ela seja penalizada.
-                    </span>
-                </p>
+                <div class="accordion" id="InfoRecolherTres">
+                    <div class="card">
+                        <div class="card-header" id="cabecalhoTres">
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                data-target="#recolherTres" aria-expanded="false" aria-controls="recolherTres">
+                                Ver mais...
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="recolherTres" class="collapse" aria-labelledby="cabecalhoTres"
+                        data-parent="#InfoRecolherTres">
+                        <div class="card-body">
+                            <p class="text-justify">Serviços de diagnóstico por laboratório de
+                                análises
+                                clínicas em
+                                regime
+                                ambulatorial: 3 dias
+                                Demais serviços de diagnóstico e terapia em regime ambulatorial: 10 dias
+                                Procedimentos de alta complexidade: 21 dias
+                                Atendimento em regimento hospital-dia: 10 dias
+                                Atendimento em regime de internação eletiva: 21 dias
+                                Urgência e emergência: imediato
+                                Consulta de retorno: a critério do profissional
+                                Após entrar em contato com o prestador, se não conseguir marcar o procedimento dentro do
+                                prazo
+                                máximo previsto, você deverá entrar em contato com operadora do seu plano de saúde para
+                                obter
+                                uma
+                                alternativa para o atendimento.
+                                Se a operadora do plano de saúde não garantir o atendimento no prazo estabelecido, você
+                                deverá
+                                fazer
+                                a denúncia à ANS para que ela seja penalizada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
@@ -169,37 +226,51 @@
                 <a href="#">
                     <button class="btn btn-outline-success">Planos devem cobrir exame do COVID-19</button>
                 </a>
-                <br>
-                <a href="#verMais4" id="linkVerMais4">Ver mais...</a>
-                <div class="verMais" id="verMais4">
-                    <a href="#">
-                        <button class="btn btn-outline-success mt-2">
-                            CNPJ de MEI(Micro Empreendedor Individual) tem novas regras para aceitação
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button class="btn btn-outline-success mt-2">
-                            ANS estabelece regras para co-participação e franquia nos planos de saúde
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button class="btn btn-outline-success mt-2">
-                            Amil assume hospital Ana Costa de Santos
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button class="btn btn-outline-success mt-2">Lei dos planos de saúde 9656/98</button>
-                    </a>
-                    <a href="#">
-                        <button class="btn btn-outline-success mt-2">Doença pré-existente e os planos de saúde</button>
-                    </a>
-                    <a href="#">
-                        <button class="btn btn-outline-success mt-2">Sul América Saúde é eleita o melhor plano de saúde
-                            empresarial</button>
-                    </a>
+                <div class="accordion mt-2" id="InfoRecolherQuatro">
+                    <div class="card">
+                        <div class="card-header" id="cabecalhoQuatro">
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                data-target="#recolherQuatro" aria-expanded="false" aria-controls="recolherQuatro">
+                                Ver mais...
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="recolherQuatro" class="collapse" aria-labelledby="cabecalhoQuatro"
+                        data-parent="#InfoRecolherQuatro">
+                        <div class="card-body">
+                            <a href="#">
+                                <button class="btn btn-outline-success mt-2">
+                                    CNPJ de MEI(Micro Empreendedor Individual) tem novas regras para aceitação
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-outline-success mt-2">
+                                    ANS estabelece regras para co-participação e franquia nos planos de saúde
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-outline-success mt-2">
+                                    Amil assume hospital Ana Costa de Santos
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-outline-success mt-2">Lei dos planos de saúde 9656/98</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-outline-success mt-2">Doença pré-existente e os planos de
+                                    saúde</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-outline-success mt-2">Sul América Saúde é eleita o melhor plano
+                                    de
+                                    saúde
+                                    empresarial</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
         <!--Fim da linha/row-->
     </main>
     <footer class="corprincipal mt-5">
