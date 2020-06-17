@@ -10,27 +10,28 @@
 </head>
 
 <body>
-    <div class="corprincipal">
-        <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="altoContraste">[1] Alto contraste</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-decoration-none text-white">[2] Mapa do site</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-decoration-none text-white">[3] A+</a>
-                <a href="#" class="text-decoration-none text-white">[4] A-</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="restaurar">[5] Restaurar</a>
-            </div>
+    <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
+        <div class="">
+            <a href="acessibilidade.html" class="text-decoration-none text-white"> Acessibilidade</a>
+        </div>
+        <div class="">
+            <a href="#mapa" class="text-decoration-none text-white" accesskey="1">[1] Ir para o conteudo</a>
+        </div>
+        <div class="">
+            <a href="#" class="text-decoration-none text-white" id="altoContraste" accesskey="2">[2] Alto contraste</a>
+        </div>
+        <div class="">
+            <a href="mapaDoSite.html" class="text-decoration-none text-white" accesskey="3">[3] Mapa do site</a>
+        </div>
+        <div class="">
+            <a href="#" class="text-decoration-none text-white" id="restaurar" accesskey="4">[4] Restaurar</a>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark corprincipal">
         <div class="container-fluid">
             <img src="img/coracao.png" alt="Icone de coração" id="imgLogo" class="img-fluid">
-            <a href="index.html" class="navbar-brand border-bottom border-white text-center" id="tituloNav">Plano de Saúde <br>Todos aqui!</a>
+            <a href="index.html" class="navbar-brand border-bottom border-white text-center" id="tituloNav">Plano de
+                Saúde <br>Todos aqui!</a>
             <button href="#" class="navbar-toggler" data-toggle="collapse" data-target="#itemMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,33 +50,43 @@
         <!--Fim do container-->
     </nav>
 
-    <main>
+    <main id="mapa">
+        <p class="bg-secondary paragrafoPreto border-top border-light text-light">
+            <a href="index.html" class="text-light">Planos</a> >
+            <a href="mapaDoSite.html" class="text-light">Mapa do site</a>
+        <div class="container text-right ">
+            <a href="#fonteMais" class="text-decoration-none text-dark" id="fonteMais" accesskey="5">[5] + Aumentar
+                fonte </a>
+            <a href="#fonteMenos" class="text-decoration-none text-dark" id="fonteMenos" accesskey="6">[6] - Diminuir
+                fonte </a>
+        </div>
+        </p>
         <div class="list-group container mt-5" id="mapaDoSite">
             <button class="list-group-item corprincipal h3">
                 Mapa do Site
             </button>
             <a href="index.html" class="text-decoration-none">
-                <button class="list-group-item list-group-item-action">
+                <button class="list-group-item list-group-item-action fonte">
                     Planos
                 </button>
             </a>
             <a href="tabela.html" class="text-decoration-none">
-                <button class="list-group-item list-group-item-action">
+                <button class="list-group-item list-group-item-action fonte">
                     Tabela
                 </button>
             </a>
             <a href="simulador.html" class="text-decoration-none">
-                <button class="list-group-item list-group-item-action">
+                <button class="list-group-item list-group-item-action fonte">
                     Simulador
                 </button>
             </a>
             <a href="informacoes.html" class="text-decoration-none">
-                <button class="list-group-item list-group-item-action">
+                <button class="list-group-item list-group-item-action fonte">
                     Informações
                 </button>
             </a>
             <a href="contato.html" class="text-decoration-none">
-                <button class="list-group-item list-group-item-action">
+                <button class="list-group-item list-group-item-action fonte">
                     Contato
                 </button>
             </a>

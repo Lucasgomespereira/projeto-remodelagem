@@ -64,6 +64,7 @@ ul.fonte {
 }
 #tituloNav{
     text-shadow: 2px 0px black;
+    font-family: 'Courier New', Courier, monospace;
 }
 /*Reorganizar as duas últimas colunas da informacoes.html*/
 @media(min-width:768px){
@@ -82,10 +83,14 @@ ul.fonte {
     .textoSlide{
         display: none;
     }
+    #flexAcessibilidade > div{
+        display: none;
+    }
 }
 /*Inclusão para deixar o menu responsivo para o iPhone 5/SE*/
-@media(max-width:330px){
-    a[class="navbar-brand"]{
+@media(max-width:360px){
+    #tituloNav{
         font-size: 14px;
     }
+   
 }

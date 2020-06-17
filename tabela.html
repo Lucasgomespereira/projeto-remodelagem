@@ -10,21 +10,21 @@
 </head>
 
 <body>
-    <div class="corprincipal">
-        <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="altoContraste">[1] Alto contraste</a>
-            </div>
-            <div class="">
-                <a href="mapaDoSite.html" class="text-decoration-none text-white">[2] Mapa do site</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="fonteMais">[3] A+</a>
-                <a href="#" class="text-decoration-none text-white" id="fonteMenos">[4] A-</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="restaurar">[5] Restaurar</a>
-            </div>
+    <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
+        <div class="">
+            <a href="acessibilidade.html" class="text-decoration-none text-white"> Acessibilidade</a>
+        </div>
+        <div class="">
+            <a href="#tabela" class="text-decoration-none text-white" accesskey="1">[1] Ir para o conteudo</a>
+        </div>
+        <div class="">
+            <a href="#" class="text-decoration-none text-white" id="altoContraste" accesskey="2">[2] Alto contraste</a>
+        </div>
+        <div class="">
+            <a href="mapaDoSite.html" class="text-decoration-none text-white" accesskey="3">[3] Mapa do site</a>
+        </div>
+        <div class="">
+            <a href="#" class="text-decoration-none text-white" id="restaurar" accesskey="4">[4] Restaurar</a>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark corprincipal">
@@ -48,9 +48,13 @@
         </div>
         <!--Fim do container-->
     </nav>
-    <main>
+    <main id="tabela">
+        <p class="bg-secondary border-top border-light paragrafoPreto text-light">
+            <a href="index.html" class="text-light">Planos</a> >
+            <a href="tabela.html" class="text-light">Tabela de Planos</a>
+        </p>
         <div class="container-fluid p-2 mt-4 text-center">
-            <h2 class="display-5 font-weight-bold fonte">Tabela de Planos</h2>
+            <h2 class="display-5 font-weight-bold">Tabela de Planos</h2>
         </div>
 
         <div class="row container-fluid text-center">
@@ -58,7 +62,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/bradesco.jpg" alt="Bradesco" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Bradesco</button>
                 </div>
             </div>
 
@@ -66,7 +70,7 @@
                 <img src="img/garantia-de-saude.jpg" alt="Garantia de Saúde"
                     class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano GS</button>
                 </div>
             </div>
 
@@ -74,7 +78,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/golden-cross.jpg" alt=" Golden Cross" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Golden</button>
                 </div>
             </div>
 
@@ -82,14 +86,14 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/biovida (1).jpg" alt="Biovida" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Biovida</button>
                 </div>
             </div>
 
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/biosaude.jpg" alt="Biosaúde" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Biosaúde</button>
                 </div>
             </div>
 
@@ -97,7 +101,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/amr1.jpg" alt="Arm" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Arm</button>
                 </div>
             </div>
 
@@ -105,7 +109,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/amil.jpg" alt="Amil" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Amil</button>
                 </div>
             </div>
 
@@ -113,7 +117,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/ameplan.jpg" alt="Ameplan" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Ameplan</button>
                 </div>
             </div>
 
@@ -121,7 +125,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/ameno.jpg" alt="Ameno" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Ameno</button>
                 </div>
             </div>
 
@@ -129,7 +133,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/allianz.jpg" alt="Allianz" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Allianz</button>
                 </div>
             </div>
 
@@ -137,21 +141,21 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/trasmontano.jpg" alt="Transmontano" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Transmontano</button>
                 </div>
             </div>
 
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/unihosp.jpg" alt="Unishop" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Unishop</button>
                 </div>
             </div>
 
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/unimed.jpg" alt="Unimed" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Unimed</button>
                 </div>
             </div>
 
@@ -159,7 +163,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/total-medcare.jpg" alt="Total Medcare" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Total Medcare</button>
                 </div>
             </div>
 
@@ -167,7 +171,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/sul-america.jpg" alt="Sul América" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Sul América</button>
                 </div>
             </div>
 
@@ -175,7 +179,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/sompo.jpg" alt="Sompo" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Sompo</button>
                 </div>
             </div>
 
@@ -184,7 +188,7 @@
                 <img src="img/seguros-unimed.jpg" alt="Seguros Unimed"
                     class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Seguros Unimed</button>
                 </div>
             </div>
 
@@ -192,21 +196,21 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/sao-miguel.jpg" alt="São Miguel" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano São Miguel</button>
                 </div>
             </div>
 
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/sao-cristovao.jpg" alt="São Cristovão" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano São Cristovão</button>
                 </div>
             </div>
 
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/santa-helena.jpg" alt="Santa Helena" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Santa Helena</button>
                 </div>
             </div>
 
@@ -214,7 +218,7 @@
                 <img src="img/prevent-senior.jpg" alt="Prevent Senior"
                     class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Prevent Senior</button>
                 </div>
             </div>
 
@@ -222,7 +226,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/porto-seguro.jpg" alt="Porto Seguro" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Porto Seguro</button>
                 </div>
             </div>
 
@@ -231,7 +235,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/plena.jpg" alt="Plena" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Plena</button>
                 </div>
             </div>
 
@@ -239,7 +243,7 @@
                 <img src="img/notre-dame-intermedica.jpg" alt="Notre Dame Intermédica"
                     class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Notre Dame Intermédica</button>
                 </div>
             </div>
 
@@ -247,7 +251,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/med-tour.jpg" alt="Med Tuor" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Med Tour</button>
                 </div>
             </div>
 
@@ -255,7 +259,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/interclinicas.jpg" alt="Interclínicas" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Interclínicas</button>
                 </div>
             </div>
 
@@ -263,7 +267,7 @@
                 <img src="img/health-santaris.jpg" alt="Health Santaris"
                     class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Health Santaris</button>
                 </div>
             </div>
 
@@ -272,7 +276,7 @@
             <div class="col-sm-12 col-md-3 col-lg-3 mt-5">
                 <img src="img/cruz-azul.jpg" alt="Cruz Azul" class="img-fluid border rounded-circle imgPlanos">
                 <div class="container">
-                    <button class="btn corprincipal mt-4">Saiba mais</button>
+                    <button class="btn btn-info btnContraste mt-4">Mais informações<br> Plano Cruz Azul</button>
                 </div>
             </div>
         </div>

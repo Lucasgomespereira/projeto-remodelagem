@@ -4,6 +4,8 @@ $(document).ready(function () {
         $('.hoverMenu').css("background-color", "black");
         $('.contrastePreto').css({ "background-color": "black", "color": "white" });
         $('#nomeContraste').removeClass('bg-secondary');
+        $('.paragrafoPreto').removeClass('bg-secondary');
+        $('.paragrafoPreto').css("background-color", "black");
         $('#nomeContraste').addClass('contrastePreto');
         $('.btn-outline-success').addClass("btn-outline-dark");
         $('.btnContraste').addClass('btn-dark');
@@ -34,6 +36,7 @@ $(document).ready(function () {
         $('#nomeContraste').addClass('bg-secondary');
         $('.contrastePreto').css({ "background-color": "", "color": "" });
         $('.btn-outline-success').removeClass("btn-outline-dark");
+        $('.paragrafoPreto').addClass('bg-secondary');
         $('.btnContraste').removeClass('btn-dark');
     });
 });

@@ -10,21 +10,21 @@
 </head>
 
 <body>
-    <div class="corprincipal">
-        <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="altoContraste">[1] Alto contraste</a>
-            </div>
-            <div class="">
-                <a href="mapaDoSite.html" class="text-decoration-none text-white">[2] Mapa do site</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="fonteMais">[3] A+</a>
-                <a href="#" class="text-decoration-none text-white" id="fonteMenos">[4] A-</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="restaurar">[5] Restaurar</a>
-            </div>
+    <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
+        <div class="">
+            <a href="acessibilidade.html" class="text-decoration-none text-white"> Acessibilidade</a>
+        </div>
+        <div class="">
+            <a href="#informacoes" class="text-decoration-none text-white" accesskey="1">[1] Ir para o conteudo</a>
+        </div>
+        <div class="">
+            <a href="#" class="text-decoration-none text-white" id="altoContraste" accesskey="2">[2] Alto contraste</a>
+        </div>
+        <div class="">
+            <a href="mapaDoSite.html" class="text-decoration-none text-white" accesskey="3">[3] Mapa do site</a>
+        </div>
+        <div class="">
+            <a href="#" class="text-decoration-none text-white" id="restaurar" accesskey="4">[4] Restaurar</a>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark corprincipal">
@@ -49,10 +49,20 @@
         </div>
         <!--Fim do container-->
     </nav>
-    <main>
+    <main id="informacoes">
+        <p class="bg-secondary paragrafoPreto border-top border-light text-light">
+            <a href="index.html" class="text-light">Planos</a> >
+            <a href="informacoes.html" class="text-light">Informações</a>
+        <div class="container text-right">
+            <a href="#fonteMais" class="text-decoration-none text-dark" id="fonteMais" accesskey="5">[5] + Aumentar
+                fonte </a>
+            <a href="#fonteMenos" class="text-decoration-none text-dark" id="fonteMenos" accesskey="6">[6] - Diminuir
+                fonte </a>
+        </div>
+        </p>
         <div class="row container-fluid text-center mt-2">
             <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
-                <h2 class="h4 corprincipal py-3 fonte">Prazos de Carência</h2>
+                <h2 class="h4 corprincipal py-3">Prazos de Carência</h2>
                 <p class="text-justify fonte">
                     É o tempo de espera que após contratar o plano de saúde tem que aguardar para ter direito as
                     coberturas. De uma forma genérica e resumida os prazos são:
@@ -69,9 +79,11 @@
                         <div class="card-body">
                             <p class="text-justify fonte"><span class="font-weight-bold">24 horas:</span> Atendimento de
                                 urgência</p>
-                            <p class="text-justify fonte"><span class="font-weight-bold">30 dias:</span> Consultas e exames
+                            <p class="text-justify fonte"><span class="font-weight-bold">30 dias:</span> Consultas e
+                                exames
                                 simples</p>
-                            <p class="text-justify fonte"><span class="font-weight-bold">6 meses:</span> Internação e cirurgia
+                            <p class="text-justify fonte"><span class="font-weight-bold">6 meses:</span> Internação e
+                                cirurgia
                             </p>
                             <p class="text-justify fonte"><span class="font-weight-bold">10 meses:</span> Parto</p>
                             <p class="text-justify fonte"><span class="font-weight-bold">24 meses:</span> Cirurgias ou
@@ -79,7 +91,8 @@
                                 complexidade
                                 para
                                 doenças ou lesões já pré existente</p>
-                            <p class="text-justify fonte">Consulte em nossas tabelas os prazos de carência normal e a redução
+                            <p class="text-justify fonte">Consulte em nossas tabelas os prazos de carência normal e a
+                                redução
                                 de carências para
                                 quem tem
                                 plano
@@ -131,7 +144,7 @@
             </div>
 
             <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
-                <h2 class="h4 corprincipal py-3 fonte">Reajuste Anual</h2>
+                <h2 class="h4 corprincipal py-3">Reajuste Anual</h2>
                 <p class="text-justify fonte">
                     Plano coletivo por adesão e empresarial o reajuste é conforme a sinistralidade da operadora.
                     O reajuste anual dos planos pessoa fisica segue o indice determinado pela Ans.
@@ -141,7 +154,7 @@
                 <p class="font-weight-bold fonte">2017: <span class="text-success">13,55%</span></p>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
-                <h2 class="h4 corprincipal py-3 fonte">Procedimentos Cobertos </h2>
+                <h2 class="h4 corprincipal py-3">Procedimentos Cobertos </h2>
                 <p class="text-justify fonte">
                     Os procedimentos em que os planos são obrigados a oferecer cobertura são regulamentados pela ANS
                 </p>
@@ -152,7 +165,7 @@
             </div>
 
             <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
-                <h2 class="h4 corprincipal py-3 fonte">Prazo de Atendimento</h2>
+                <h2 class="h4 corprincipal py-3">Prazo de Atendimento</h2>
                 <p class="text-justify fonte">
                     Após cumprido o período de carência os prazos máximos de atendimento são:
                     Consulta básica - pediatria, clínica médica, cirurgia geral, ginecologia e obstetrícia: 7 dias
@@ -201,7 +214,7 @@
             </div>
 
             <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
-                <h2 class="h4 corprincipal py-3 fonte">Plano odontológico</h2>
+                <h2 class="h4 corprincipal py-3">Plano odontológico</h2>
                 <ul class="list-group">
                     <li class="list-group-item fonte">Carência Zero</li>
                     <li class="list-group-item fonte">Cobertura Nacional</li>
@@ -212,7 +225,7 @@
                 </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 mt-5 espacoInfo">
-                <h2 class="h4 corprincipal py-3 fonte">Agência Nacional de Saúde</h2>
+                <h2 class="h4 corprincipal py-3">Agência Nacional de Saúde</h2>
                 <p class="text-justify fonte">
                     ANS - Agencia Nacional de Saúde Suplementar
                     É um orgão federal ligado ao Ministério da Saúde que regulamenta e fiscaliza os planos de saúde
@@ -222,7 +235,7 @@
                 </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 mt-5 espacoInfo">
-                <h2 class="h4 corprincipal py-3 fonte">Últimas Notícias</h2>
+                <h2 class="h4 corprincipal py-3">Últimas Notícias</h2>
                 <a href="#">
                     <button class="btn btn-outline-success fonte">Planos devem cobrir exame do COVID-19</button>
                 </a>
@@ -255,14 +268,16 @@
                                 </button>
                             </a>
                             <a href="#">
-                                <button class="btn btn-outline-success mt-2 fonte">Lei dos planos de saúde 9656/98</button>
+                                <button class="btn btn-outline-success mt-2 fonte">Lei dos planos de saúde
+                                    9656/98</button>
                             </a>
                             <a href="#">
                                 <button class="btn btn-outline-success mt-2 fonte">Doença pré-existente e os planos de
                                     saúde</button>
                             </a>
                             <a href="#">
-                                <button class="btn btn-outline-success mt-2 fonte">Sul América Saúde é eleita o melhor plano
+                                <button class="btn btn-outline-success mt-2 fonte">Sul América Saúde é eleita o melhor
+                                    plano
                                     de
                                     saúde
                                     empresarial</button>
@@ -271,7 +286,7 @@
                     </div>
                 </div>
             </div>
-        <!--Fim da linha/row-->
+            <!--Fim da linha/row-->
     </main>
     <footer class="corprincipal mt-5">
         <div class="row container-fluid">

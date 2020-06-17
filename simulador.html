@@ -10,27 +10,28 @@
 </head>
 
 <body>
-    <div class="corprincipal">
-        <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="altoContraste">[1] Alto contraste</a>
-            </div>
-            <div class="">
-                <a href="mapaDoSite.html" class="text-decoration-none text-white">[2] Mapa do site</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="fonteMais">[3] A+</a>
-                <a href="#" class="text-decoration-none text-white" id="fonteMenos">[4] A-</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="restaurar">[5] Restaurar</a>
-            </div>
+    <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
+        <div class="">
+            <a href="acessibilidade.html" class="text-decoration-none text-white"> Acessibilidade</a>
+        </div>
+        <div class="">
+            <a href="#simulador" class="text-decoration-none text-white" accesskey="1">[1] Ir para o conteudo</a>
+        </div>
+        <div class="">
+            <a href="#" class="text-decoration-none text-white" id="altoContraste" accesskey="2">[2] Alto contraste</a>
+        </div>
+        <div class="">
+            <a href="mapaDoSite.html" class="text-decoration-none text-white" accesskey="3">[3] Mapa do site</a>
+        </div>
+        <div class="">
+            <a href="#" class="text-decoration-none text-white" id="restaurar" accesskey="4">[4] Restaurar</a>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark corprincipal">
         <div class="container-fluid">
             <img src="img/coracao.png" alt="Icone de coração" id="imgLogo" class="img-fluid">
-            <a href="index.html" class="navbar-brand border-bottom border-white text-center" id="tituloNav">Plano de Saúde <br>Todos aqui!</a>
+            <a href="index.html" class="navbar-brand border-bottom border-white text-center" id="tituloNav">Plano de
+                Saúde <br>Todos aqui!</a>
             <button href="#" class="navbar-toggler" data-toggle="collapse" data-target="#itemMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,7 +49,17 @@
         </div>
         <!--Fim do container-->
     </nav>
-    <main>
+    <main id="simulador">
+        <p class="bg-secondary paragrafoPreto border-top border-light text-light">
+            <a href="index.html" class="text-light">Planos</a> >
+            <a href="simulador.html" class="text-light">Simulador</a>
+        <div class="container text-right">
+            <a href="#fonteMais" class="text-decoration-none text-dark" id="fonteMais" accesskey="5">[5] + Aumentar
+                fonte </a>
+            <a href="#fonteMenos" class="text-decoration-none text-dark" id="fonteMenos" accesskey="6">[6] - Diminuir
+                fonte </a>
+        </div>
+        </p>
         <h2 class="display-5 font-weight-bold text-center">Simulador de Planos de Saúde</h2>
         <div class="row container">
             <div class="col-sm-12 col-md-6">
@@ -59,86 +70,84 @@
                 <h1 class="h6 fonte">Número de pessoa(s):</h1>
                 <form action="#" class="form-inline">
                     <div class="form-group mt-1">
-                        <label for="nome" class="fonte">00 a 18 anos:</label>
-                        <input type="text" name="nome" class="inputSimulador">
+                        <label for="pessoaIdade1" class="fonte">00 a 18 anos:</label>
+                        <input type="text" name="pessoaIdade1" class="inputSimulador" id="pessoaIdade1">
                     </div>
-                </form>
-                <form action="#" class="form-inline">
+
                     <div class="form-group mt-1">
-                        <label for="nome" class="fonte">19 a 23 anos:</label>
-                        <input type="text" name="nome" class="inputSimulador">
+                        <label for="pessoaIdade2" class="fonte">19 a 23 anos:</label>
+                        <input type="text" name="pessoaIdade2" class="inputSimulador" id="pessoaIdade2">
                     </div>
-                </form>
-                <form action="#" class="form-inline">
+
                     <div class="form-group mt-1">
-                        <label for="nome" class="fonte">24 a 28 anos:</label>
-                        <input type="text" name="nome" class="inputSimulador">
+                        <label for="pessoaIdade3" class="fonte">24 a 28 anos:</label>
+                        <input type="text" name="pessoaIdade3" class="inputSimulador" id="pessoaIdade3">
                     </div>
-                </form>
-                <form action="#" class="form-inline">
+
                     <div class="form-group mt-1">
-                        <label for="nome" class="fonte">29 a 33 anos:</label>
-                        <input type="text" name="nome" class="inputSimulador">
+                        <label for="pessoaIdade4" class="fonte">29 a 33 anos:</label>
+                        <input type="text" name="pessoaIdade4" class="inputSimulador" id="pessoaIdade4">
                     </div>
-                </form>
-                <form action="#" class="form-inline">
+
                     <div class="form-group mt-1">
-                        <label for="nome" class="fonte">34 a 38 anos:</label>
-                        <input type="text" name="nome" class="inputSimulador">
+                        <label for="pessoaIdade5" class="fonte">34 a 38 anos:</label>
+                        <input type="text" name="pessoaIdade5" class="inputSimulador" id="pessoaIdade5">
                     </div>
-                </form>
-                <form action="#" class="form-inline">
+
+
                     <div class="form-group mt-1">
-                        <label for="nome" class="fonte">39 a 43 anos:</label>
-                        <input type="text" name="nome" class="inputSimulador">
+                        <label for="pessoaIdade6" class="fonte">39 a 43 anos:</label>
+                        <input type="text" name="pessoaIdade6" class="inputSimulador" id="pessoaIdade6">
                     </div>
-                </form>
-                <form action="#" class="form-inline">
+
                     <div class="form-group mt-1">
-                        <label for="nome" class="fonte">44 a 48 anos:</label>
-                        <input type="text" name="nome" class="inputSimulador">
+                        <label for="pessoaIdade7" class="fonte">44 a 48 anos:</label>
+                        <input type="text" name="pessoaIdade7" class="inputSimulador" id="pessoaIdade7">
                     </div>
-                </form>
-                <form action="#" class="form-inline">
+
                     <div class="form-group mt-1">
-                        <label for="nome" class="fonte">49 a 53 anos:</label>
-                        <input type="text" name="nome" class="inputSimulador">
+                        <label for="pessoaIdade8" class="fonte">49 a 53 anos:</label>
+                        <input type="text" name="pessoaIdade8" class="inputSimulador" id="pessoaIdade8">
                     </div>
-                </form>
-                <form action="#" class="form-inline">
+
                     <div class="form-group mt-1">
-                        <label for="nome" class="fonte">54 a 58 anos:</label>
-                        <input type="text" name="nome" class="inputSimulador">
+                        <label for="pessoaIdade9" class="fonte">54 a 58 anos:</label>
+                        <input type="text" name="pessoaIdade9" class="inputSimulador" id="pessoaIdade9">
                     </div>
-                </form>
-                <form action="#" class="form-inline">
+
                     <div class="form-group mt-1">
-                        <label for="nome" class="fonte">+de 59 anos:</label>
-                        <input type="text" name="nome" class="inputSimulador">
+                        <label for="pessoaIdade10" class="fonte">+de 59 anos:</label>
+                        <input type="text" name="pessoaIdade10" class="inputSimulador" id="pessoaIdade10">
                     </div>
                 </form>
                 <figure>
-                    <img src="img/patrocinado_imagem_simulador.PNG" alt="" class="mt-2 img-fluid" id="imgPatrocinador">
+                    <img src="img/patrocinado_imagem_simulador.PNG" alt="Patrocinadores" class="mt-2 img-fluid"
+                        id="imgPatrocinador">
                     <figcaption class="font-weight-bold">
                         Patrocinadores
                     </figcaption>
                 </figure>
             </div>
             <div class="col-md-3 text-center">
-                <label for="nome" class="fonte">Seu nome</label>
-                <input type="text" class="form-control contrastePreto bg-secondary text-light" id="nomeContraste">
+                <form action="#">
+                    <label for="nomeContraste" class="fonte">Seu nome</label>
+                    <input type="text" class="form-control contrastePreto bg-secondary text-light" id="nomeContraste">
 
-                <label for="nome" class="mt-3 fonte">Escolha o plano</label>
-                <p class="text-muted mt-2 fonte">Pessoa física</p>
-                <button class="btn btn-secondary form-control contrastePreto">INDIVIDUAL</button>
-                <button class="btn btn-secondary form-control mt-2 contrastePreto">FAMILIAR</button>
+                    <label for="nome" class="mt-3 fonte">Escolha o plano</label>
+                    <p class="text-muted mt-2 fonte">Pessoa física</p>
+                    <button class="btn btn-secondary form-control contrastePreto">INDIVIDUAL</button>
+                    <button class="btn btn-secondary form-control mt-2 contrastePreto">FAMILIAR</button>
 
-                <p class="text-muted mt-2 fonte">ou para empresa</p>
-                <button class="btn btn-secondary form-control contrastePreto">INDIVIDUAL</button>
-                <p class="text-justify mt-3 font-weight-bold fonte">Nossa ferramenta faz um orçamento comparativo de todos os
-                    planos de saúde e
-                    apresenta uma tabela completa com informações de preço, rede credenciada e prazos de carências. Não
-                    precisa informar os seus dados pessoais e o resultado saí na hora.</p>
+                    <p class="text-muted mt-2 fonte">ou para empresa</p>
+                    <button class="btn btn-secondary form-control contrastePreto">INDIVIDUAL</button>
+                    <p class="text-justify mt-3 font-weight-bold fonte">Nossa ferramenta faz um orçamento comparativo de
+                        todos os
+                        planos de saúde e
+                        apresenta uma tabela completa com informações de preço, rede credenciada e prazos de carências.
+                        Não
+                        precisa informar os seus dados pessoais e o resultado saí na hora.</p>
+
+                </form>
             </div>
         </div>
     </main>

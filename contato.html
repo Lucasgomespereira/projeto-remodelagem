@@ -10,21 +10,21 @@
 </head>
 
 <body>
-    <div class="corprincipal">
-        <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="altoContraste">[1] Alto contraste</a>
-            </div>
-            <div class="">
-                <a href="mapaDoSite.html" class="text-decoration-none text-white">[2] Mapa do site</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="fonteMais">[3] A+</a>
-                <a href="#" class="text-decoration-none text-white" id="fonteMenos">[4] A-</a>
-            </div>
-            <div class="">
-                <a href="#" class="text-decoration-none text-white" id="restaurar">[5] Restaurar</a>
-            </div>
+    <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
+        <div class="">
+            <a href="acessibilidade.html" class="text-decoration-none text-white"> Acessibilidade</a>
+        </div>
+        <div class="">
+            <a href="#contato" class="text-decoration-none text-white" accesskey="1">[1] Ir para o conteudo</a>
+        </div>
+        <div class="">
+            <a href="#" class="text-decoration-none text-white" id="altoContraste" accesskey="2">[2] Alto contraste</a>
+        </div>
+        <div class="">
+            <a href="mapaDoSite.html" class="text-decoration-none text-white" accesskey="3">[3] Mapa do site</a>
+        </div>
+        <div class="">
+            <a href="#" class="text-decoration-none text-white" id="restaurar" accesskey="4">[4] Restaurar</a>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark corprincipal">
@@ -48,14 +48,22 @@
         </div>
         <!--Fim do container-->
     </nav>
-    <main>
+    <main id="contato">
+        <p class="bg-secondary paragrafoPreto border-top border-light">
+            <a href="index.html" class="text-light">Planos</a> >
+            <a href="contato.html" class="text-light">Contato</a>
+            <div class="container text-right ">
+                <a href="#fonteMais" class="text-decoration-none text-dark" id="fonteMais" accesskey="5">[5] + Aumentar fonte </a>
+                <a href="#fonteMenos" class="text-decoration-none text-dark" id="fonteMenos" accesskey="6">[6] - Diminuir fonte </a>
+            </div>
+        </p>
         <div class="container mt-5">
             <div class="container text-center">
-                <h2 class="corprincipal py-2 frases fonte">Atendimento</h2>
+                <h2 class="corprincipal py-2 frases">Atendimento</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="text-decoration-none">
-                            <p class="font-weight-bold text-dark fonte">Atendimento</p>
+                            <p class="font-weight-bold text-dark fonte">Ligação</p>
                             <img src="img/telemarketing.png" class="img=fluid imgAtendimento"
                                 alt="Atendente de telemarketing">
                         </a>
@@ -74,23 +82,23 @@
                     </div>
                 </div>
             </div>
-            <div class="container  mt-5">
-                <h2 class="corprincipal text-center frases py-2 fonte">Formulário de contato</h2>
+            <div class="container mt-5">
+                <h2 class="corprincipal text-center frases py-2">Formulário de contato</h2>
                 <p class="text-danger font-weight-bold fonte">(*) Campos obrigatórios</p>
                 <div class="row">
                     <div class="col-12">
                         <label for="nome" class="font-weight-bold fonte">Nome completo: <span
                                 class="text-danger">*</span></label>
-                        <input type="text" class="form-control" name="nome">
+                        <input type="text" class="form-control" name="nome" id="nome">
                     </div>
                     <div class="col-12">
                         <label for="email" class="font-weight-bold fonte">Email: <span class="text-danger">*</span></label>
-                        <input type="email" class="form-control" name="email">
+                        <input type="email" class="form-control" name="email" id="email">
                     </div>
                     <div class="col-12">
                         <label for="sugestoes" class="font-weight-bold fonte">Sugestões: <span
                                 class="text-danger">*</span></label>
-                        <textarea name="sugestoes" id="" cols="30" rows="10" class="form-control"></textarea>
+                        <textarea name="sugestoes" id="sugestoes" cols="30" rows="10" class="form-control" id="sugestoes"></textarea>
                     </div>
                     <div class="col-5 mt-2 text-center" id="btnContato">
                         <button type="submit" class="form-control btn btn-success btn-lg contrastePreto">Enviar</button>
