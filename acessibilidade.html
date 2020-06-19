@@ -1,16 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acessibilidade</title>
+    <title>Planos</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <div class="d-flex justify-content-center corprincipal border-bottom border-light" id="flexAcessibilidade">
+        <div class="">
+            <a href="acessibilidade.html" class="text-decoration-none text-white"> Acessibilidade</a>
+        </div>
+        <div class="">
+            <a href="#planos" class="text-decoration-none text-white" accesskey="1">[1] Ir para o conteudo</a>
+        </div>
+        <div class="">
+            <a href="#" class="text-decoration-none text-white" id="altoContraste" accesskey="2">[2] Alto contraste</a>
+        </div>
+        <div class="">
+            <a href="mapaDoSite.html" class="text-decoration-none text-white" accesskey="3">[3] Mapa do site</a>
+        </div>
+        <div class="">
+            <a href="#" class="text-decoration-none text-white" id="restaurar" accesskey="4">[4] Restaurar</a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark corprincipal">
+        <div class="container-fluid">
+            <img src="img/coracao.png" alt="Icone de coração" id="imgLogo" class="img-fluid">
+            <a href="index.html" class="navbar-brand border-bottom border-white text-center" id="tituloNav">Plano de
+                Saúde <br>Todos aqui!</a>
+            <button href="#" class="navbar-toggler" data-toggle="collapse" data-target="#itemMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="itemMenu">
+                <ul class="navbar-nav mr-auto navbar-dark">
+                    <li><a href="index.html" class="nav-link active hoverMenu">Planos</a></li>
+                    <li><a href="tabela.html" class="nav-link active hoverMenu">Tabela</a></li>
+                    <li><a href="simulador.html" class="nav-link active hoverMenu">Simulador</a></li>
+                    <li><a href="informacoes.html" class="nav-link active hoverMenu">Informações</a></li>
+                    <li><a href="contato.html" class="nav-link active hoverMenu">Contato</a></li>
+                </ul>
+            </div>
+            <!--Fim do collapse-->
+        </div>
+        <!--Fim do container-->
+    </nav>
+
+    <main>
+        <p class="bg-secondary paragrafoPreto border-top border-light text-light">
+            <a href="index.html" class="text-light">Planos</a>
+            <span class="text-light"> > </span>
+            <a href="acessibilidade.html" class="text-light">Acessibilidade</a>
+            <div class="container text-right ">
+                <a href="#fonteMais" class="text-decoration-none text-dark" id="fonteMais" accesskey="5">[5] + Aumentar fonte </a>
+                <a href="#fonteMenos" class="text-decoration-none text-dark" id="fonteMenos" accesskey="6">[6] - Diminuir fonte </a>
+            </div>
+        </p>
+    </main>
+    <footer class="corprincipal mt-5">
+        <div class="row container-fluid">
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+                <img src="img/medica.png" alt="Médica segurando raio-x" class="img-fluid" id="imgRodape">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center mt-4">
+                <h4 class="text-white">Endereço</h4>
+                <span class="text-white">Av. Celso Garcia, 3724, cj 12<br></span>
+                <span class="text-white">Tatuape - São Paulo - SP, 03064-000</sp>
+            </div>
+        </div>
+        <div class=" container text-center">
+            <span class="text-white font-weight-bold">Copyright 2006 - www.planosdesaudetodosaqui.com.br | Desenvolvido
+                por:</span>
+            <span class="text-success font-weight-bold">Web Interface Team</span>
+        </div>
+    </footer>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/acessibilidade.js"></script>
 </body>
+
 </html>
