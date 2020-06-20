@@ -15,7 +15,7 @@
             <a href="acessibilidade.html" class="text-decoration-none text-white"> Acessibilidade</a>
         </div>
         <div class="">
-            <a href="#planos" class="text-decoration-none text-white" accesskey="1">[1] Ir para o conteudo</a>
+            <a href="#conteudoAcessibilidade" class="text-decoration-none text-white" accesskey="1">[1] Ir para o conteudo</a>
         </div>
         <div class="">
             <a href="#" class="text-decoration-none text-white" id="altoContraste" accesskey="2">[2] Alto contraste</a>
@@ -50,18 +50,61 @@
         <!--Fim do container-->
     </nav>
 
-    <main>
+    <main id="conteudoAcessibilidade">
         <p class="bg-secondary paragrafoPreto border-top border-light text-light">
             <a href="index.html" class="text-light">Planos</a>
             <span class="text-light"> > </span>
-            <a href="acessibilidade.html" class="text-light">Acessibilidade</a>
-            <div class="container text-right ">
-                <a href="#fonteMais" class="text-decoration-none text-dark" id="fonteMais" accesskey="5">[5] + Aumentar fonte </a>
-                <a href="#fonteMenos" class="text-decoration-none text-dark" id="fonteMenos" accesskey="6">[6] - Diminuir fonte </a>
-            </div>
+            <a href="acessibilidade.html" class="text-light font-weight-bold">Acessibilidade</a>
         </p>
+        <div class="container text-right ">
+            <a href="#fonteMais" class="text-decoration-none text-dark" id="fonteMais" accesskey="5">[5] + Aumentar
+                fonte </a>
+            <a href="#fonteMenos" class="text-decoration-none text-dark" id="fonteMenos" accesskey="6">[6] - Diminuir
+                fonte </a>
+        </div>
+        <div class="container row mt-4">
+            <div class="col-12">
+                <p class="ml-3 fonte">
+                    O itens de acessibilidade estão distribuídos no site seguindo atalhos específicos,
+                    abaixo você pode visualizar quais teclas apertar
+                </p>
+                <ul>
+                    <li class="fonte">Apertando <span class="font-weight-bold">Alt + 1</span> você será redirecionado para o conteúdo
+                        da página</li>
+                    <li class="fonte">Apertando <span class="font-weight-bold">Alt + 2</span> será ativado a função de alto contraste,
+                        que deixará os elementos do site na
+                        cor preta
+                    </li>
+                    <li class="fonte">Apertando <span class="font-weight-bold">Alt + 3</span> você será redirecionado para a página de
+                        mapa do site</li>
+                    <li class="fonte">
+                        Apertando <span class="font-weight-bold">Alt + 4</span> você irá restaurar todos os elementos do
+                        site,
+                        retirando diminuição ou aumento de tamanho e deixando ele na cor original
+                    </li>
+                    <li class="fonte">Apertando <span class="font-weight-bold">Alt + 5</span> você aumentará o tamanho dos conteúdos
+                        da página atual</li>
+                    <li class="fonte">Apertando <span class="font-weight-bold">Alt + 6</span> você diminuirá o tamanho dos conteúdos
+                        da página atual</li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <ul>
+                    <li class="fonte">No navegador Chrome as teclas acima funcionam normalmente, mas para outros navegadores devem
+                        usar teclas diferentes.</li>
+                    <li class="fonte">No Firefox é necessário ao invés de apertar Alt + algum número, você deve teclar Alt + Shift +
+                        número desejado</li>
+                    <li class="fonte">No Opera 12.1 ou nas versões acima usa-se : Shift + Esc + número desejado</li>
+                    <li class="fonte">
+                        No MacOs as teclas são : Control + Alt + número desejado, isso funciona para os seguintes
+                        navegadores:
+                        Chrome, Firefox e Safari
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
-    <footer class="corprincipal mt-5">
+    <footer class="corprincipal mt-4">
         <div class="row container-fluid">
             <div class="col-sm-12 col-md-6 col-lg-6 text-center">
                 <img src="img/medica.png" alt="Médica segurando raio-x" class="img-fluid" id="imgRodape">
