@@ -5,6 +5,9 @@
     background-color:#800080;
     color:#fff;
 }
+#itemMenu{
+    margin-left: 2.8%;
+}
 nav, li > a{
     font-weight: bold;
     font-size: 18px;
